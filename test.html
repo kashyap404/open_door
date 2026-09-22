@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="SRA VJTI Open Door — student robotics projects showcase.">
+<title>SRA Open Door — 18 Builds, One Club</title>
+<link rel="icon" href="media/sra-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="https://sravjti.in/" target="_blank" rel="noopener">
+      <img class="brand-logo" src="sra-logo.png" alt="SRA VJTI logo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" style="display:none" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" stroke="#111" stroke-width="1.4"/>
+        <circle cx="16" cy="16" r="3.2" fill="#111"/>
+        <path d="M16 2v6M16 24v6M2 16h6M24 16h6" stroke="#111" stroke-width="1.4"/>
+      </svg>
+      <span class="brand-text"></span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <path class="b1" d="M3 6h18"/><path class="b2" d="M3 12h18"/><path class="b3" d="M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+  <div class="wrap">
+    <ul class="mnav" id="mobileNav">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+    </ul>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-photo">
+    <img src="hero-logo.jpeg" alt="SRA lab bench — robotic arm, drone and rover"
+         id="heroImg" fetchpriority="high" decoding="async">
+    <div class="overlay"></div>
+    <div class="hero-inner">
+      <h1 class="hero-title">Open Door</h1>
+      <p class="hero-sub">Come see what you could build next.</p>
+      <div class="hero-actions">
+        <a class="btn-solid" href="#projects">Projects</a>
+        <a class="btn-line" href="#about">What is SRA?</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-block reveal">
+      <h2>What SRA is</h2>
+      <p>Society of Robotics And Automation (SRA) is a student society at VJTI that deals with robotics, machine vision, automation and allied fields.</p>
+      <p>SRA is a space for learning, building, and sharing.</p>
+    </div>
+    
+    <div class="about-block open-door-section reveal">
+      <h2>Open Door</h2>
+      <p>Every year, SRA hosts “<strong>Open Door</strong>”, where first years get the opportunity to explore and learn about Projects built by their seniors, giving them useful insights into different domains and discover where their interest lies.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2>Projects</h2>
+        <p>Tap any project to open its full page — photos, video, and the story behind it.</p>
+      </div>
+      <div class="count-badge" id="countBadge">1 / 18 live</div>
+    </div>
+    <div class="grid" id="projectGrid"></div>
+  </div>
+</section>
+
+<section class="workshops" id="workshops">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2>Workshops at SRA</h2>
+        <p>SRA conducts four structured workshops for first-year students, helping them learn, build, and explore different domains of robotics.</p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="acc-item">
+        <button class="acc-btn" data-tab="inception">
+          <span class="acc-icon">▸</span> Inception
+        </button>
+        <div class="acc-content" id="inception">
+          <div class="workshop-block">
+            <div class="workshop-media">
+              <img src="inception.jpeg" alt="Inception 2025">
+            </div>
+            <div class="workshop-content">
+              <p>Inception is an introductory seminar conducted by SRA for the first year students to prepare them for the world of robotics and automation. It covers the basics of Electronics, IOT, Mechanics and much more and acts as prerequisite knowledge for the upcoming workshops.</p>
+              <blockquote>Inception 2025</blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" data-tab="wall-e">
+          <span class="acc-icon">▸</span> Wall E
+        </button>
+        <div class="acc-content" id="wall-e">
+          <div class="workshop-block">
+            <div class="workshop-media">
+              <img src="Wall-e.png" alt="Wall E Workshop">
+            </div>
+            <div class="workshop-content">
+              <p>Wall-E focuses on the concepts of line-following and self-balancing, using ESP32, a powerful micro-controller with features like inbuilt Wi-Fi support and BLE, with extensive application in several domains like IoT, RF, etc. The workshop entails various essential concepts such as PID Control, Embedded Communication Protocols, PWM, Filters, RTOS, etc. and gives its attendees (first-year students) a general idea about the world of robotics and embedded hardware.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" data-tab="pixels">
+          <span class="acc-icon">▸</span> Pixels
+        </button>
+        <div class="acc-content" id="pixels">
+          <div class="workshop-block">
+            <div class="workshop-content">
+              <p>Pixels is a dive into the field of Computer Vision. The workshop is designed to give the participants a basic understanding of the field of Computer Vision and its applications. It starts teaching students the very basics of Python and git, and than moves towards image processing and computer vision using the OpenCV library. Students also get to design their very own blob detection which will help track objects in videos or live camera.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-btn" data-tab="mario">
+          <span class="acc-icon">▸</span> Mario
+        </button>
+        <div class="acc-content" id="mario">
+          <div class="workshop-block">
+            <div class="workshop-media">
+              <img src="Mario.png" alt="Mario Workshop">
+            </div>
+            <div class="workshop-content">
+              <p>In the MARIO workshop freshers design and implement a robotic manipulator(4-DOF Manipulator with Gripper on ROS Based IO) using intricate concepts of forward and inverse kinematics, with Robot Operating System (ROS).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="know-more reveal">
+      <h3>Know More About Us</h3>
+      <ul>
+        <li><a href="https://instagram.com/sra_vjti" target="_blank" rel="noopener">Instagram: @sra_vjti</a></li>
+        <li><a href="https://www.linkedin.com/company/society-of-robotics-and-automation-vjti" target="_blank" rel="noopener">Linkedin: Society of Robotics and Automation, VJTI</a></li>
+        <li><a href="https://twitter.com/SRAVJTI" target="_blank" rel="noopener">X: @SRAVJTI</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <a href="https://sravjti.in/" target="_blank" rel="noopener">
+      <img class="foot-logo" src="sra-logo.png" alt="SRA VJTI" onerror="this.parentElement.remove()">
+    </a>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   PROJECT LIST — one line per project.
+   folder: must match the project's real folder name in the repo
+   name / tag: shown on the card
+   photo: path to a grayscale-friendly photo, e.g. "amazedex/media/cover.jpg"
+   live: true once that project's own index.html page actually exists
+   ============================================================ */
+const PROJECTS = [
+  { folder: "amazedex",   name: "Amazedex",   tag: "Maze-solving robot", photo: "", live: true },
+  { folder: "astra_rtos", name: "Astra RTOS", tag: "Real-time OS",       photo: "", live: false },
+  { folder: "aura",       name: "Aura",       tag: "Add a category",     photo: "", live: false },
+  { folder: "blazescript",name: "Blazescript",tag: "Scripting tool",     photo: "", live: false },
+  { folder: "columbus",   name: "Columbus",   tag: "Navigation robot",   photo: "", live: false },
+  { folder: "flexwalk",   name: "Flexwalk",   tag: "Legged robot",       photo: "", live: false },
+  { folder: "icarus",     name: "Icarus",     tag: "Flight / drone",     photo: "", live: false },
+  // ---- add your remaining 11 projects the same way ----
+];
+
+/* ---------- build the cards ---------- */
+const grid = document.getElementById("projectGrid");
+let liveCount = 0;
+PROJECTS.forEach((p, i) => {
+  if(p.live) liveCount++;
+  const a = document.createElement("a");
+  a.className = "pcard reveal";
+  a.style.setProperty("--d", `${(i % 4) * 70}ms`);            /* staggered pop-in per row */
+  a.href = p.live ? `${p.folder}/` : "#";
+  if(!p.live){
+    a.setAttribute("aria-disabled", "true");
+    a.addEventListener("click", e => e.preventDefault());     /* dead cards no longer jump to top */
+  }
+  a.innerHTML = `
+    ${p.photo ? `<img src="${p.photo}" alt="${p.name}" loading="lazy">` : ""}
+    <div class="fade"></div>
+    <div class="info">
+      <span class="tag">P${String(i+1).padStart(2,"0")} · ${p.tag}</span>
+      <h3>${p.name}</h3>
+    </div>`;
+  grid.appendChild(a);
+});
+document.getElementById("countBadge").textContent = `${liveCount} / ${PROJECTS.length} live`;
+
+/* ---------- mobile menu ---------- */
+const burgerBtn = document.getElementById("burgerBtn");
+const mobileNav = document.getElementById("mobileNav");
+const setMenu = open => {
+  mobileNav.classList.toggle("open", open);
+  burgerBtn.setAttribute("aria-expanded", String(open));
+  burgerBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+};
+burgerBtn.addEventListener("click", () => setMenu(!mobileNav.classList.contains("open")));
+mobileNav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+
+/* ---------- workshops accordion ---------- */
+const accBtns = document.querySelectorAll('.acc-btn');
+const accContents = document.querySelectorAll('.acc-content');
+accBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const isActive = btn.classList.contains('active');
+    
+    // Close all
+    accBtns.forEach(b => b.classList.remove('active'));
+    accContents.forEach(c => c.classList.remove('active'));
+    
+    // If it was closed, open it. If it was open, it stays closed (toggles)
+    if (!isActive) {
+      btn.classList.add('active');
+      content.classList.add('active');
+    }
+  });
+});
+
+/* ---------- reveal on scroll ---------- */
+const revealEls = document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window){
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
+  revealEls.forEach(el => io.observe(el));
+}else{
+  revealEls.forEach(el => el.classList.add("in"));
+}
+
+/* ---------- scroll progress line under the nav ---------- */
+const progressBar = document.getElementById("progressBar");
+const setProgress = () => {
+  const doc = document.documentElement;
+  const max = doc.scrollHeight - doc.clientHeight;
+  progressBar.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + "%";
+};
+addEventListener("scroll", setProgress, { passive: true });
+setProgress();
+
+/* ---------- hero parallax (image slides slower than the page) ---------- */
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const heroImg = document.getElementById("heroImg");
+const heroPhoto = document.querySelector(".hero-photo");
+if(heroImg && heroPhoto && !reduceMotion){
+  let ticking = false;
+  const parallax = () => {
+    const r = heroPhoto.getBoundingClientRect();
+    if(r.bottom > 0){
+      const p = Math.min(1, Math.max(0, -r.top / r.height));   /* 0 → 1 as the hero scrolls away */
+      heroImg.style.transform = `translate3d(0, ${(p * 4).toFixed(2)}%, 0) scale(1.12)`;
+    }
+    ticking = false;
+  };
+  addEventListener("scroll", () => {
+    if(!ticking){ requestAnimationFrame(parallax); ticking = true; }
+  }, { passive: true });
+  parallax();
+}
+</script>
+</body>
+</html>
