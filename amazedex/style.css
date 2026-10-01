@@ -4,6 +4,9 @@
     --text-secondary: #6c757d;
     --border-color: #e9ecef;
     --hover-bg: #f1f3f5;
+    --font-display: 'Chakra Petch', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
 }
 
 * {
@@ -13,7 +16,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: var(--font-body);
     background-color: var(--bg-color);
     color: var(--text-primary);
     line-height: 1.5;
@@ -21,7 +24,7 @@ body {
 }
 
 .container {
-    max-width: 720px;
+    max-width: 840px; 
     margin: 0 auto;
     padding: 80px 24px;
 }
@@ -33,7 +36,8 @@ body {
 
 .back-link {
     display: inline-block;
-    font-size: 14px;
+    font-family: var(--font-mono);
+    font-size: 13.5px;
     color: var(--text-secondary);
     text-decoration: none;
     margin-bottom: 24px;
@@ -45,6 +49,7 @@ body {
 }
 
 .header h1 {
+    font-family: var(--font-display);
     font-size: 32px;
     font-weight: 600;
     letter-spacing: -0.5px;
@@ -60,11 +65,13 @@ body {
 }
 
 .domain-label {
+    font-family: var(--font-mono);
     font-size: 14px;
     color: var(--text-secondary);
 }
 
 .domain-tag {
+    font-family: var(--font-mono);
     font-size: 12px;
     font-weight: 500;
     color: var(--text-primary);
@@ -87,14 +94,15 @@ body {
     line-height: 1.6;
 }
 
-/* Screenshot */
-.screenshot-section {
+/* Media Sections */
+.media-section {
     margin-bottom: 56px;
     padding-bottom: 32px;
     border-bottom: 1px solid var(--border-color);
 }
 
-.screenshot-section h2 {
+.media-section h2 {
+    font-family: var(--font-mono);
     font-size: 14px;
     font-weight: 600;
     color: var(--text-secondary);
@@ -103,20 +111,30 @@ body {
     margin-bottom: 20px;
 }
 
-.project-screenshot {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.project-video {
+    width: 100%;
+    max-height: 460px;
+    object-fit: cover;
     border: 1px solid var(--border-color);
-    border-radius: 4px; 
+    border-radius: 4px;
+    background: #000;
+    aspect-ratio: 16/9;
 }
 
-.benchmark-caption {
-    margin-top: 16px;
-    font-size: 14px;
-    color: var(--text-secondary);
-    line-height: 1.5;
-    font-style: italic;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.project-screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    aspect-ratio: 4/3;
 }
 
 /* Workflow */
@@ -127,6 +145,7 @@ body {
 }
 
 .workflow-section h2 {
+    font-family: var(--font-mono);
     font-size: 14px;
     font-weight: 600;
     color: var(--text-secondary);
@@ -170,6 +189,7 @@ body {
 
 .workflow-list strong {
     display: block;
+    font-family: var(--font-body);
     font-size: 16px;
     font-weight: 600;
     color: var(--text-primary);
@@ -190,6 +210,7 @@ body {
 }
 
 .key-concepts h2 {
+    font-family: var(--font-mono);
     font-size: 14px;
     font-weight: 600;
     color: var(--text-secondary);
@@ -207,6 +228,7 @@ body {
 }
 
 .concept-item h3 {
+    font-family: var(--font-display);
     font-size: 17px;
     font-weight: 600;
     color: var(--text-primary);
@@ -227,6 +249,7 @@ footer {
 }
 
 footer p {
+    font-family: var(--font-mono);
     color: var(--text-secondary);
     font-size: 12px;
 }
@@ -243,14 +266,22 @@ footer p {
     transform: translateY(0);
 }
 
+/* Mobile adjustments */
 @media (max-width: 600px) {
     .container {
-        padding: 40px 24px;
+        padding: 40px 18px;
     }
     .header h1 {
         font-size: 28px;
     }
     .description p {
         font-size: 16px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .project-screenshot {
+        aspect-ratio: 16/9;
     }
 }

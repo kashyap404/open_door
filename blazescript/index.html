@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlazeScript | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,17 +12,65 @@
         <header class="header fade-in">
             <a href="../" class="back-link">← Back to Projects</a>
             <h1>BlazeScript</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">Compilers</span>
+                <span class="domain-tag">LLVM</span>
+            </div>
         </header>
 
         <main>
             <section class="description fade-in">
-                <p>A custom programming language whose compiler is made from scratch that uses ahead of time compilation which offers real advantages over JavaScript for certain workloads on the web.</p>
+                <p>This project is a custom programming language whose compiler is made from scratch that uses ahead of time compilation which offers real advantages over JavaScript for certain workloads on the web. The end goal being is to genrate a web assembly object file that is faster than javascript on certail workloads</p>
             </section>
 
             <section class="screenshot-section fade-in">
                 <h2>Benchmark</h2>
                 <img src="benchmark.png" alt="BlazeScript Benchmark Results" class="project-screenshot">
                 <p class="benchmark-caption">The above benchmark shows that the web assembly is 1.09x times faster than legacy javascript.</p>
+            </section>
+
+            <!-- New Approach & Workflow Section -->
+            <section class="workflow-section fade-in">
+                <h2>Approach & Workflow</h2>
+                <ol class="workflow-list">
+                    <li>
+                        <strong>Lexical Analysis (Lexer)</strong>
+                        <p>Raw source code text is broken down into structured tokens, identifying keywords, identifiers, and operators.</p>
+                    </li>
+                    <li>
+                        <strong>Syntax Analysis (Parser)</strong>
+                        <p>Tokens are organized into an Abstract Syntax Tree (AST), enforcing the grammatical rules of the language.</p>
+                    </li>
+                    <li>
+                        <strong>Code Generation (LLVM IR)</strong>
+                        <p>The AST is traversed to generate LLVM Intermediate Representation (IR), which is hardware-independent.</p>
+                    </li>
+                    <li>
+                        <strong>Optimization & Wasm Compilation</strong>
+                        <p>LLVM optimizes the IR and compiles it down to a highly efficient WebAssembly binary object file.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="key-concepts fade-in">
+                <h2>Key Concepts</h2>
+                
+                <div class="concept-item">
+                    <h3>Ahead-of-Time (AOT) Compilation</h3>
+                    <p>Unlike JavaScript's Just-In-Time (JIT) compilation, BlazeScript compiles code entirely before execution. This eliminates runtime parsing and optimization overhead, leading to faster and more predictable startup times.</p>
+                </div>
+
+                <div class="concept-item">
+                    <h3>WebAssembly Targeting</h3>
+                    <p>The compiler ultimately generates a WebAssembly (Wasm) object file. Wasm is a low-level binary format that runs at near-native speed in modern browsers, making it ideal for heavy computational workloads.</p>
+                </div>
+
+                <div class="concept-item">
+                    <h3>Custom Compiler Pipeline</h3>
+                    <p>Built entirely from scratch, the pipeline involves lexical analysis, parsing into an Abstract Syntax Tree (AST), and custom code generation. This provides deep insights into language design and fine-grained control over performance.</p>
+                </div>
             </section>
         </main>
 

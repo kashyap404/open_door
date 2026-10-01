@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazeDex | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <a href="../" class="back-link">← Back to Projects</a>
+            <h1>AmazeDex</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">Reinforcement Learning</span>
+                <span class="domain-tag">Dexterous Manipulation</span>
+                <span class="domain-tag">MuJoCo</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="description fade-in">
+                <p>AmazeDex is a reinforcement learning project focused on autonomous in-hand dexterous manipulation using a 4-fingered Amazing Hand by Pollen Robotics. The system trains control policies in MuJoCo simulation to reorient a cube to target poses, using visual tracking to deploy the learned movements onto real hardware.</p>
+            </section>
+
+            <!-- Video Section -->
+            <section class="media-section fade-in">
+                <h2>Demo Video</h2>
+                <video controls class="project-video">
+                    <source src="amazedex.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Image Gallery Section -->
+            <section class="media-section fade-in">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="amazedex1.jpg" alt="AmazeDex Hardware View" class="project-screenshot">
+                    <img src="amazedex2.jpg" alt="AmazeDex Simulation View" class="project-screenshot">
+                </div>
+            </section>
+
+            <!-- Approach & Workflow Section -->
+            <section class="workflow-section fade-in">
+                <h2>Approach / Workflow</h2>
+                <ol class="workflow-list">
+                    <li>
+                        <strong>Model the robotic hand and environment in MuJoCo</strong>
+                        <p>Define the 8-DOF hand, actuators, joints, collision geometry, cube, and environment, then establish a controlled simulation for safe reinforcement learning experiments.</p>
+                    </li>
+                    <li>
+                        <strong>Explore reinforcement learning strategies</strong>
+                        <p>Evaluate PPO, curriculum learning, and DDPG with HER, identifying issues such as reward hacking, local minima, and poor convergence before adopting SAC for manipulation.</p>
+                    </li>
+                    <li>
+                        <strong>Design the reward and training environment</strong>
+                        <p>Shape rewards around reaching, pushing, rotation, and successful orientation while modifying cube geometry, restricting initial conditions, and introducing domain randomization for robust policy learning.</p>
+                    </li>
+                    <li>
+                        <strong>Train and evaluate the SAC policy</strong>
+                        <p>Use a large replay buffer and entropy-driven exploration to learn dynamic finger coordination, achieving approximately 80% accuracy under fixed simulation conditions and around 70% with domain randomization.</p>
+                    </li>
+                    <li>
+                        <strong>Deploy through a perception-to-control pipeline</strong>
+                        <p>Estimate cube pose from camera observations using AprilTags, feed the resulting state into the trained SAC policy, and convert predicted joint actions into physical servo commands.</p>
+                    </li>
+                    <li>
+                        <strong>Analyze the sim-to-real gap</strong>
+                        <p>Compare simulation and hardware behavior, accounting for servo latency, backlash, friction, calibration offsets, and perception errors, while identifying digital-twin and improved perception methods for future iterations.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Key Concepts Section -->
+            <section class="key-concepts fade-in">
+                <h2>Key Concepts</h2>
+                
+                <div class="concept-item">
+                    <h3>Deep Reinforcement Learning</h3>
+                    <p>Training a robotic hand through trial and error so it learns coordinated finger movements for dexterous cube manipulation without explicitly programmed motion sequences.</p>
+                </div>
+
+                <div class="concept-item">
+                    <h3>Soft Actor-Critic (SAC)</h3>
+                    <p>An off-policy reinforcement learning algorithm that combines experience replay and entropy regularization, enabling exploration and effective reuse of successful manipulation trajectories.</p>
+                </div>
+
+                <div class="concept-item">
+                    <h3>Reward Engineering</h3>
+                    <p>Designing rewards that encourage reaching, pushing, rotation, and target orientation while preventing the policy from exploiting easy strategies such as simply holding the cube.</p>
+                </div>
+
+                <div class="concept-item">
+                    <h3>MuJoCo Simulation</h3>
+                    <p>A physics-based simulation environment used to safely train and evaluate the robotic hand before deploying learned manipulation policies onto physical hardware.</p>
+                </div>
+
+                <div class="concept-item">
+                    <h3>Sim-to-Real Transfer</h3>
+                    <p>Bridging differences between simulated and physical environments through domain randomization, calibrated hardware models, robust perception, and compensation for actuator and mechanical discrepancies.</p>
+                </div>
+
+                <div class="concept-item">
+                    <h3>Visual Pose Estimation</h3>
+                    <p>Estimating the cube's position and orientation from camera observations using approaches such as AprilTags, replacing direct simulator state access during physical deployment.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; SRA VJTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
