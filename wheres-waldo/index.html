@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where's Waldo | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <a href="../" class="back-link">← Back to Projects</a>
+            <h1>Where's Waldo</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">FPGA</span>
+                <span class="domain-tag">Hardware Acceleration</span>
+                <span class="domain-tag">Computer Vision</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="description fade-in">
+                <p>Where's Waldo: A custom FPGA hardware accelerator engineered to run the YOLO object detection model. The architecture parallelizes matrix multiplications and convolution operations directly in hardware to process live camera feeds. This pipeline allows the system to output bounding boxes and class labels in real time as objects move through the camera's field of view.</p>
+            </section>
+
+            <!-- Image Gallery Section -->
+            <section class="media-section fade-in">
+                <h2>Gallery</h2>
+                
+                <!-- Group 1: Two images with a shared caption -->
+                <div class="gallery-group">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="waldo1.jpeg" alt="FPGA Calculation Pipeline 1" class="media-object">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="waldo2.jpeg" alt="FPGA Calculation Pipeline 2" class="media-object">
+                        </div>
+                    </div>
+                    <p class="group-caption">fpga calculation pipeline</p>
+                </div>
+
+                <!-- Group 2: Two images with individual captions -->
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="waldo_hw.jpeg" alt="Hardware Utilisation" class="media-object">
+                        <p class="media-caption">Hardware utilisation</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="waldo3.jpeg" alt="Gradient on FPGA" class="media-object">
+                        <p class="media-caption">Gradient on FPGA using convolutions</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; SRA VJTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

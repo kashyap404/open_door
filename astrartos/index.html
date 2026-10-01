@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstraRTOS | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <a href="../" class="back-link">← Back to Projects</a>
+            <h1>AstraRTOS</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">Embedded Systems</span>
+                <span class="domain-tag">Operating System</span>
+                <span class="domain-tag">Firmware Development</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="description fade-in">
+                <p>AstraRTOS is a real-time operating system (RTOS) built from scratch for microcontrollers based on ARM Cortex-M4, specifically targeting the STM32F4 Discovery board.</p>
+                <p>It features a preemptive, priority-based task scheduler, along with things like queues, mutexes, semaphores, and timers. It also has various low-level drivers that allow the OS to interact with the microcontroller's peripherals.</p>
+            </section>
+
+            <!-- Video Section -->
+            <section class="media-section fade-in">
+                <h2>Hardware Demo</h2>
+                <div class="gallery-item full-width">
+                    <video controls class="media-object">
+                        <source src="astra1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="media-caption">Stepper motor running using pwm driver implemented in astraRTOS</p>
+                </div>
+            </section>
+
+            <!-- Image Gallery Section -->
+            <section class="media-section fade-in">
+                <h2>Terminal & Task Logs</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="astra2.png" alt="Queue samples running on terminal" class="media-object">
+                        <p class="media-caption">Queue samples running on terminal</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="astra3.png" alt="Task switching and counter increment" class="media-object">
+                        <p class="media-caption">Shows 2 tasks switching and incrementing the same counter without any race conditions</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; SRA VJTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
