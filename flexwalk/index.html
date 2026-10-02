@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXWALK | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <a href="../" class="back-link">← Back to Projects</a>
+            <h1>FLEXWALK</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">Mechanical Design</span>
+                <span class="domain-tag">Control Systems</span>
+                <span class="domain-tag">Kinematics</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="description fade-in">
+                <p>A humanoid bipedal robot built from the ground up, with hip pitch, hip roll, knee pitch, and ankle pitch joints. We CAD-designed and built the entire mechanism, then use closed-loop control to coordinate its movements and bring it to life.</p>
+                <p>We’re working on making its movements more stable, precise, and human-like, while developing the control and gait-generation systems that allow it to walk. FlexWalk brings together mechanical design, electronics, kinematics, and control into one integrated platform.</p>
+            </section>
+
+            <!-- Video Gallery Section -->
+            <section class="media-section fade-in">
+                <h2>Demos</h2>
+                
+                <div class="gallery-grid">
+                    <!-- Full width video -->
+                    <div class="gallery-item full-width">
+                        <video controls muted loop playsinline class="media-object">
+                            <source src="flex1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- Two side-by-side videos -->
+                    <div class="gallery-item">
+                        <video controls muted loop playsinline class="media-object">
+                            <source src="flex2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls muted loop playsinline class="media-object">
+                            <source src="flex3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; SRA VJTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

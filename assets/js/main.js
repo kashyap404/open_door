@@ -3,13 +3,13 @@
    ============================================================ */
 const PROJECTS = [
   { folder: "picolink",        name: "PicoLink",        tag: "Embedded / Communication Protocols",      desc: "an RP2040-based embedded platform built around VGA graphics generation and a composite USB HID + CDC device.", live: true },
-  { folder: "splattera",       name: "Splattera",       tag: "domain",        desc: "(small proj desc).", live: true },
+  { folder: "splattera",       name: "Splattera",       tag: "Computer Vision / 3DGS",        desc: "A scalable 3D reconstruction pipeline for turning long video trajectories into photorealistic digital environments.", live: true },
   { folder: "blazescript",     name: "Blazescript",     tag: "Compilers / LLVM",    desc: "A custom programming language built from scratch using AOT compilation via LLVM to WebAssembly for faster web workloads.", live: true },
   { folder: "micromouse",      name: "MicroMouse",      tag: "Embedded / PCB Design",  desc: "An autonomous robot that maps the maze, finds the optimal path, and races to the finish.", live: true },
   { folder: "amazedex",        name: "Amazedex",        tag: "Reinforcement Learning / Sim2Real", desc: "A reinforcement learning project focused on autonomous in-hand dexterous manipulation using a 4-fingered hand", live: true },
   { folder: "astrartos",       name: "AstraRTOS",       tag: "Embedded Systems / OS",        desc: "AstraRTOS is a real-time operating system (RTOS) from scratch for ARM Cortex m-4 microcontrollers.", live: true },
   { folder: "mission-mimosa",  name: "Mission Mimosa",  tag: "Robot Learning / Embedded",              desc: "Giving robots a sense of touch, so they can see, feel, and interact with the world.", live: true },
-  { folder: "platypulse",      name: "PlatyPulse",      tag: "domain",            desc: "(small proj desc).", live: true },
+  { folder: "platypulse",      name: "PlatyPulse",      tag: "Embedded / Communication",            desc: "PlatyPulse is a compact wireless experimentation platform combining RF, RFID/NFC, and IR, enabling users to capture, analyze, store, and replay signals through one handheld device.", live: true },
   { folder: "tinygpu",         name: "TinyGPU",         tag: "GPU / ASIC design ",      desc: "A custom RISC-V matrix accelerator delivering 15× speedup on 4×4 matrix multiplication.", live: true },
   { folder: "flexwalk",        name: "FLEXWALK",        tag: "CAD / 3D DESIGN",        desc: "A humanoid bipedal robot. It has hip pitch, hip roll, knee pitch, and ankle pitch which we CAD'd and built. We are moving it using closed loop controls.", live: true },
   { folder: "virel",           name: "ViReL",           tag: "domain",            desc: "(small proj desc)", live: true },
@@ -17,7 +17,7 @@ const PROJECTS = [
   { folder: "icarus",          name: "Icarus",          tag: "domain",      desc: "(small proj desc)", live: true },
   { folder: "waddle",          name: "Waddle",          tag: "Bipedal Locomotion / RL",        desc: "A bipedal robot that walks by using Reinforcement Learning algorithms in simulation", live: true },
   { folder: "columbus-maximus",name: "Columbus Maximus",tag: "domain",    desc: "(small proj desc).", live: true },
-  { folder: "aura",            name: "AURA",            tag: "domain", desc: "(small proj desc)", live: true },
+  { folder: "aura",            name: "AURA",            tag: "Embedded / Communication", desc: "Project AURA aims to transmit messages/data by harvesting electrical energy from ambient FM signals and using the harvested energy to perform FM backscatter communication.", live: true },
   { folder: "mcqueen",         name: "McQueen",         tag: "Imitation Learning / Autonomous",      desc: "An autonomous RC car that sees, learns, and drives in real time.", live: true },
   { folder: "wheres-waldo",    name: "Where's Waldo",   tag: "Comp Vision / FPGA Design",         desc: "A custom YOLO accelerator that detects a live feed on an FPGA", live: true }
 ];
