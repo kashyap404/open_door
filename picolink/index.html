@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
     <script>document.documentElement.classList.add('js-enabled');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header class="header fade-in">
             <a href="../" class="back-link">← Back to Projects</a>
             <h1>PicoLink</h1>
-            
+
             <div class="domains">
                 <span class="domain-label">Domains:</span>
                 <span class="domain-tag">Embedded Systems</span>
@@ -26,19 +30,24 @@
 
         <main>
             <section class="description fade-in">
-                <p>PicoLink is an embedded hardware project based on the RP2040 microcontroller, designed to provide VGA display output and USB connectivity through a composite USB device. It uses PIO and DMA for efficient real-time graphics generation and communication. The project involves custom PCB design, firmware development, VGA interfacing, USB HID and CDC implementation, and hardware-software integration.</p>
+                <p>PicoLink is an embedded hardware project based on the RP2040 microcontroller, designed to provide VGA
+                    display output and USB connectivity through a composite USB device. It uses PIO and DMA for
+                    efficient real-time graphics generation and communication. The project involves custom PCB design,
+                    firmware development, VGA interfacing, USB HID and CDC implementation, and hardware-software
+                    integration.</p>
             </section>
 
             <!-- Image Gallery Section -->
             <section class="media-section fade-in">
                 <h2>Gallery</h2>
-                
+
                 <!-- Group 1: First Output -->
                 <div class="gallery-group">
                     <div class="gallery-item full-width">
                         <img src="picolink1.jpeg" alt="First successful PicoLink output" class="media-object">
                     </div>
-                    <p class="group-caption">Our first successful PicoLink output, marking the moment we finally got it working.</p>
+                    <p class="group-caption">Our first successful PicoLink output, marking the moment we finally got it
+                        working.</p>
                 </div>
 
                 <!-- Group 2: Pac-Man (Image + Video) -->
@@ -48,7 +57,7 @@
                             <img src="picolink2.jpeg" alt="Pac-Man on PicoLink" class="media-object">
                         </div>
                         <div class="gallery-item">
-                            <video controls class="media-object">
+                            <video controls muted class="media-object">
                                 <source src="picolink3.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -61,7 +70,8 @@
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <img src="picolink4.jpeg" alt="Space Invaders on PicoLink" class="media-object">
-                        <p class="media-caption">Our take on Space Invaders, built from scratch and running smoothly on PicoLink.</p>
+                        <p class="media-caption">Our take on Space Invaders, built from scratch and running smoothly on
+                            PicoLink.</p>
                     </div>
                     <div class="gallery-item">
                         <img src="picolink5.jpeg" alt="USB Composite Device" class="media-object">
@@ -79,4 +89,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

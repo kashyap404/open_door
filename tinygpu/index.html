@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyGPU | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <a href="../" class="back-link">← Back to Projects</a>
+            <h1>TinyGPU</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">GPU</span>
+                <span class="domain-tag">FPGA</span>
+                <span class="domain-tag">Vector processor</span>
+                <span class="domain-tag">ASIC design</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="description fade-in">
+                <p>TinyGPU is a custom Risc-V Vector Extension supporting matrix multiplication accelerator. It acts as a hardware accelerator to CVA6 CPU. We have used SIMD style architecture to design and implement the GPU on a Zynq-zc702 FPGA and have observed a speed up of 15x for 4x4 matmul.</p>
+                <p>As demand for LLMs and graphics goes up this was a good project to learn why accelerators are needed and how to design them from a hardware point of view. Complete info: <a href="https://athralk.github.io/blog/gpu-project/index.html" target="_blank" rel="noopener">https://athralk.github.io/blog/gpu-project/index.html</a></p>
+            </section>
+
+            <!-- Image Gallery Section -->
+            <section class="media-section fade-in">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="tiny1.jpg" alt="TinyGPU + CVA6 flowchart" class="media-object">
+                        <p class="media-caption">TinyGPU + CVA6 flowchart</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="tiny2.png" alt="Zynq FPGA Utilisation" class="media-object">
+                        <p class="media-caption">Zynq FPGA Utilisation</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; SRA VJTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
