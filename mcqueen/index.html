@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McQueen | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <a href="../" class="back-link">← Back to Projects</a>
+            <h1>McQueen</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">Autonomous Driving</span>
+                <span class="domain-tag">Computer Vision</span>
+                <span class="domain-tag">Edge Computing</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="description fade-in">
+                <p>McQueen is a vision-based autonomous RC car using a single RGB camera for perception. A Jetson Nano streams camera data to a remote NVIDIA RTX 4090, where a pretrained spatiotemporal driving backbone and McQueen-specific lightweight action head predict steering and throttle. Commands return to the car for real-time, closed-loop control.</p>
+            </section>
+
+            <!-- Image Section -->
+            <section class="media-section fade-in">
+                <h2>Hardware</h2>
+                <div class="gallery-item full-width">
+                    <img src="car1.png" alt="McQueen Autonomous RC Car" class="media-object">
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; SRA VJTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

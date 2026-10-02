@@ -2,23 +2,23 @@
    PROJECT LIST — one line per project.
    ============================================================ */
 const PROJECTS = [
-  { folder: "picolink",        name: "PicoLink",        tag: "domain",      desc: " (small proj desc)", live: true },
+  { folder: "picolink",        name: "PicoLink",        tag: "Embedded / Communication Protocols",      desc: "an RP2040-based embedded platform built around VGA graphics generation and a composite USB HID + CDC device.", live: true },
   { folder: "splattera",       name: "Splattera",       tag: "domain",        desc: "(small proj desc).", live: true },
   { folder: "blazescript",     name: "Blazescript",     tag: "Compilers / LLVM",    desc: "A custom programming language built from scratch using AOT compilation via LLVM to WebAssembly for faster web workloads.", live: true },
   { folder: "micromouse",      name: "MicroMouse",      tag: "Embedded / PCB Design",  desc: "(small proj desc).", live: true },
   { folder: "amazedex",        name: "Amazedex",        tag: "Reinforcement Learning / Sim2Real", desc: "A reinforcement learning project focused on autonomous in-hand dexterous manipulation using a 4-fingered hand", live: true },
   { folder: "astrartos",       name: "AstraRTOS",       tag: "Embedded Systems / OS",        desc: "AstraRTOS is a real-time operating system (RTOS) from scratch for ARM Cortex m-4 microcontrollers.", live: true },
-  { folder: "mission-mimosa",  name: "Mission Mimosa",  tag: "domain",              desc: "(small proj desc)", live: true },
+  { folder: "mission-mimosa",  name: "Mission Mimosa",  tag: "Robot Learning / Embedded",              desc: "Giving robots a sense of touch, so they can see, feel, and interact with the world.", live: true },
   { folder: "platypulse",      name: "PlatyPulse",      tag: "domain",            desc: "(small proj desc).", live: true },
   { folder: "tinygpu",         name: "TinyGPU",         tag: "domain",      desc: "(small proj desc)", live: true },
   { folder: "flexwalk",        name: "FLEXWALK",        tag: "CAD / 3D DESIGN",        desc: "A humanoid bipedal robot. It has hip pitch, hip roll, knee pitch, and ankle pitch which we CAD'd and built. We are moving it using closed loop controls.", live: true },
   { folder: "virel",           name: "ViReL",           tag: "domain",            desc: "(small proj desc)", live: true },
-  { folder: "reforge",         name: "Reforge",         tag: "domain",           desc: "(small proj desc)", live: true },
+  { folder: "reforge",         name: "Reforge",         tag: "Embedded Systems / FPGA",           desc: "A custom development board integrating an iCE40 FPGA with an ESP32-WROOM, designed to combine hardware-level processing with flexible file management, control, and communication.", live: true },
   { folder: "icarus",          name: "Icarus",          tag: "domain",      desc: "(small proj desc)", live: true },
   { folder: "waddle",          name: "Waddle",          tag: "Bipedal Locomotion / RL",        desc: "A bipedal robot that walks by using Reinforcement Learning algorithms in simulation", live: true },
   { folder: "columbus-maximus",name: "Columbus Maximus",tag: "domain",    desc: "(small proj desc).", live: true },
   { folder: "aura",            name: "AURA",            tag: "domain", desc: "(small proj desc)", live: true },
-  { folder: "mcqueen",         name: "McQueen",         tag: "domain",      desc: "(small proj desc)", live: true },
+  { folder: "mcqueen",         name: "McQueen",         tag: "Imitation Learning / Autonomous",      desc: "An autonomous RC car that sees, learns, and drives in real time.", live: true },
   { folder: "wheres-waldo",    name: "Where's Waldo",   tag: "Comp Vision / FPGA Design",         desc: "A custom YOLO accelerator that detects a live feed on an FPGA", live: true }
 ];
 
