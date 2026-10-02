@@ -291,3 +291,36 @@ footer{ border-top:1px solid var(--line); padding:40px 0; }
     font-size: 12px; 
   }
 }
+/* ---------------- SOCIAL LINKS ---------------- */
+.social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Adjust mobile footer layout if needed */
+@media (max-width: 640px) {
+  .foot-inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
