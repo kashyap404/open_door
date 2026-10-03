@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Open Door</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header fade-in">
+            <a href="../" class="back-link">← Back to Projects</a>
+            <h1>AURA</h1>
+            
+            <div class="domains">
+                <span class="domain-label">Domains:</span>
+                <span class="domain-tag">Embedded</span>
+                <span class="domain-tag">communication</span>
+
+            </div>
+        </header>
+
+        <main>
+            <section class="description fade-in">
+                <p>What if we could transmit a message or even a song without a battery, using only passive electronic components? Sounds interesting, right? In Project AURA, we make this a reality with a device that harvests electrical energy from the ambient FM signals around us and uses it to perform ambient FM backscatter communication. Instead of generating our own carrier wave, we embed our message onto the ambient FM signals already present in the surroundings, with an RF switch alternately reflecting and absorbing them. The backscattered message can then be decoded by a standard FM receiver, and also by software-defined radios (SDRs) like the HackRF or RTL-SDR.</p>
+            </section>
+
+            <!-- Media Gallery Section -->
+            <section class="media-section fade-in">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <!-- Two side-by-side images -->
+                    <div class="gallery-item">
+                        <img src="aura1.jpg" alt="Setup for ambient backscatter on FM" class="media-object">
+                        <p class="media-caption">Setup for ambient backscatter on FM</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="aura3.svg" alt="Basic working of sending our own data using ambient signals" class="media-object">
+                        <p class="media-caption">Basic working of sending our own data using ambient signals</p>
+                    </div>
+                    <!-- Full width video below -->
+                    <div class="gallery-item full-width">
+                        <video controls muted loop playsinline class="media-object">
+                            <source src="aura2.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="media-caption">OOK transmission and reception between hackrf and rtl-sdr</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; SRA VJTI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
