@@ -14,7 +14,7 @@ const PROJECTS = [
   { folder: "flexwalk",        name: "FLEXWALK",        tag: "CAD / 3D DESIGN",        desc: "A humanoid bipedal robot. It has hip pitch, hip roll, knee pitch, and ankle pitch which we CAD'd and built. We are moving it using closed loop controls.", live: true },
   { folder: "virel",           name: "ViReL",           tag: "domain",            desc: "(small proj desc)", live: true },
   { folder: "reforge",         name: "Reforge",         tag: "Embedded Systems / FPGA",           desc: "A custom development board integrating an iCE40 FPGA with an ESP32-WROOM, designed to combine hardware-level processing with flexible file management, control, and communication.", live: true },
-  { folder: "icarus",          name: "Icarus",          tag: "domain",      desc: "(small proj desc)", live: true },
+  { folder: "icarus",          name: "Icarus",          tag: "Embedded / PCB Design ",      desc: "An FPV quadcopter engineered entirely from scratch using  custom PCB hardware design and  embedded firmware", live: true },
   { folder: "waddle",          name: "Waddle",          tag: "Bipedal Locomotion / RL",        desc: "A bipedal robot that walks by using Reinforcement Learning algorithms in simulation", live: true },
   { folder: "columbus-maximus",name: "Columbus Maximus",tag: "domain",    desc: "(small proj desc).", live: true },
   { folder: "aura",            name: "AURA",            tag: "Embedded / Communication", desc: "Project AURA aims to transmit messages/data by harvesting electrical energy from ambient FM signals and using the harvested energy to perform FM backscatter communication.", live: true },
