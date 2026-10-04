@@ -133,21 +133,28 @@ body {
 .gallery-item.full-width {
     grid-column: 1 / -1;
 }
+/* ... [Keep all the CSS above this exactly the same] ... */
 
 .media-object {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain; /* THIS PREVENTS CROPPING */
     display: block;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    aspect-ratio: 4/3;
-    background: #000; 
+    background: #000; /* Black background for video letterbox space */
+}
+
+.gallery-item img.media-object {
+    background: #ffffff; /* Keep white background for images */
 }
 
 .gallery-item.full-width .media-object {
-    aspect-ratio: 16/9; /* Wider aspect ratio for the full-width image */
+    max-height: 500px; /* Slightly larger for the full-width video */
 }
+
+/* ... [Keep all the CSS below this exactly the same] ... */
 
 /* Footer */
 footer {
