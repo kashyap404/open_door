@@ -176,6 +176,40 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+/* External Link / GitHub Button */
+.external-link {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.repo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--text-primary);
+    color: #ffffff;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.repo-btn:hover {
+    background: transparent;
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.repo-btn svg {
+    width: 18px;
+    height: 18px;
+}
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
